@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+       body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:rgb(248, 248, 248);
+        }
+        .logo{
+            width: 13%;
+            height: 3%;
+        }
+        .main{
+            border-radius: 30px;
+            background-color: rgb(241, 241, 241);
+            margin: auto;
+            margin-top: 5%;
+            width:85%;
+            box-shadow:  0px 5px 5px #999999;
+            position: relative;
+            padding: 20px;
+        }
+        .main2{
+            position: absolute;
+            border-radius: 30px;
+            background-color: rgb(255, 255, 255);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 80%;
+        }
+        .menu{
+            background-repeat: no-repeat;
+            background-size:17px;
+            background-position: 10px 10px;
+            text-indent: 23px;
+            font-size:smaller; 
+            padding:10px; 
+        }
+        #Dashboard{
+            border-radius: 8px;
+            background-color:rgb(255, 255, 255);
+            background-image: url(Icon\ material-dashboard.svg); 
+            width:10.5%;
+            margin: 0;
+            box-shadow: 0px 5px 0px #cccccc;
+            color: rgba(250, 102, 102, 0.973);
+        }
+        #Chapter{
+            background-image: url(Icon\ ionic-md-book.svg); 
+            margin-top: 20px;
+        }
+        #Class{
+            background-image: url(classroom.svg); 
+        }
+        #Forum{
+            background-image: url(discussion.svg); 
+        }
+        #Progress{
+            background-image: url(graphic-progression.svg); 
+        }
+        #Note{
+            background-image: url(writing.svg); 
+        }
+        #snow{
+            width: 15%;
+            margin: auto;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .profile{
+            float:right;
+            width: 30%;
+        }
+        .Details{
+            float: left;
+            width: 70%;
+        }
+        .achievements{
+            border-radius: 15px;
+            background-color: rgb(89, 174, 243);
+            margin-top: 20px;
+            margin-left: 20px; 
+            position: relative;  
+        }
+        .achievements::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .column {
+           float: left;
+           width: 25%;
+           
+        }
+        .achievements figcaption{
+            text-align: center;
+            color: #ffffff;
+           font-size: small;
+           padding-left: 10px;
+        }
+        #joy img{
+            width:195px;
+            padding: 10px;    
+        }
+        #gold img{
+            width:60px;        
+        }
+        #gold{
+            padding-left: 20px;
+        }
+        #trophy img{
+            width:60px;
+            padding-top: 10px;       
+        }
+        #medal img{
+            width:60px;    
+        }
+        #medal figcaption{
+         opacity: 0.5;    
+        }
+        .menu2{
+            box-shadow:  0px 5px 5px #999999;
+            border-radius: 15px;
+            text-align: center;
+            font-size: small;
+            margin-left: 10%;
+            margin-top: 5%;
+            height:10%;
+            width:35%;
+            float: left;
+        }
+        .menu2 img{
+            width:50px;   
+        }
+        #myclass{
+            background-color: rgb(255, 219, 255);
+        }
+        #classforum{
+            background-color: rgb(184, 255, 240);   
+        }
+        #myprogress{
+            background-color: rgb(252, 255, 212);
+        }
+        #teachernote{ 
+            background-color: rgb(255, 244, 208);   
+        }
+        #face{
+            background-image: url(Ellipse\ 1.png);
+            color: rgba(250, 102, 102, 0.973);
+           margin-top:30px;
+           margin-left: 60px;
+        }
+        .score{
+            text-align: center;
+            border-radius: 15px;
+            background-color: rgb(46, 241, 245);
+            width:50%;
+            margin-left: 60px;
+            margin-top:30px;
+            padding:7px;
+            padding-bottom: 15px;
+            position: relative;
+        }
+        .dot {
+            position: absolute;
+            height: 20px;
+            width:20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            display: inline-block;
+            right:1px;
+            top:7px;
+            opacity: 0.7;
+        }
+        .dot1 {
+            position: absolute;
+            height: 15px;
+            width:15px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            display: inline-block;
+            bottom:3px;
+            left:3px;
+            opacity: 0.7;
+        }
+        .Avatar figcaption{
+            text-align: center;
+        }
+        .Avatar img{
+            width: 60%;
+            margin-top:15px ;
+        }
+        button{
+            background-color: rgba(250, 102, 102, 0.973);
+            width: 35%;
+            text-align: center;
+            margin: 16px 10px 0;
+            color: white;
+            margin-top: 0;
+            border-radius: 30px;
+            border:none;
+            padding: 6px 6px;
+            margin-bottom: 5%;
+            font-size: medium; 
+        }
+        .next{
+             position: absolute;
+             right:2px;
+             top:50%;
+             color: #ffffff;
+             font-size: large;
+        }
+        .achieve{
+            color: #ffffff;
+            text-align: right;
+            padding-right: 25%;
+            font-size: large;
+            padding-top: 8px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img class="logo" src="http://kaboodleinnovations.com/Website%20-%20Desktop/images/logo.png" alt="logo">
+        <div class="menu">
+            <div class="menu" id="Dashboard"> Dashboard</div>
+            <div class="menu" id="Chapter">Select Chapter</div>
+            <div class="menu" id="Class">My Class</div>
+            <div class="menu" id="Forum">Class Forum</div>
+            <div class="menu" id="Progress">My progress</div>
+            <div class="menu" id="Note">Teacher's note</div> 
+        </div>
+        <img src="Group 26644.svg" id="snow">   
+        <div class="main2 clearfix">
+            <div class="Details">
+                    <div class="achievements">
+                        <div class="achieve">Your Achievements</div>
+                         <div class="column"  id="joy"><img src="joy.svg"></div>
+                        <div class="column"   id="gold">
+                            <figure>
+                                <center><img src="kisspng-gold-award.svg"></center>
+                                <figcaption>Hello World</figcaption>   
+                            </figure>
+                        </div>
+                        <div class="column"  id="trophy">
+                            <figure>
+                                <center><img src="transparent-trophy.svg"></center>
+                                <figcaption>Know-it-all</figcaption>
+                            </figure>
+                        </div>
+                        <div class="column"  id="medal">
+                            <figure>
+                                <center><img src="transparent-medal.svg"></center>
+                                <figcaption>Gifted</figcaption>
+                            </figure>
+                        </div>
+                        <div class="next">></div>
+                    </div>
+                            <div class="menu2" id="myclass">
+                                <figure>
+                                    <center><img src="education.svg"></center>
+                                    <figcaption>My Class</figcaption>
+                                </figure>
+                            </div>
+                            <div  class="menu2"  id="classforum">
+                                <figure>
+                                    <center></center><img src="discussion (1).svg"></center>
+                                    <figcaption>Class Forum</figcaption>
+                                </figure>
+                            </div>
+                        
+                            <div  class="menu2"  id="myprogress">
+                                <figure>
+                                    <center> <img src="growth.svg"></center>
+                                    <figcaption>My Progress</figcaption>
+                                </figure>
+                            </div>
+                            <div  class="menu2"  id="teachernote">
+                                <figure>
+                                    <center><img src="sticky-notes.svg"></center>
+                                    <figcaption>Teacher's Notes</figcaption>
+                                </figure>
+                            </div>
+            </div>
+           <div class="profile">
+            <div class="menu" id="face">Akanksha Singh</div>
+            <div class="score">Your points<br>178
+                <span class="dot"></span>
+                <span class="dot1"></span>
+            </div>
+            <div class="Avatar">
+                <figure>
+                    <figcaption>Your Avatar</figcaption>
+                    <center><img src="avatar.svg" alt="avatar"></center>
+                </figure>
+            </div>
+            <center><button>Upgrade</button></center>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

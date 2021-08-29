@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:rgb(248, 248, 248);
+        }
+        .logo{
+            width: 200px;
+            height: 120px;
+        }
+        .icons {
+            background: white;
+            border-radius: 50%;
+            padding:10px;
+            box-shadow: 0 5px 0 rgba(180, 180, 180, 0.9);
+        }
+        #one{
+            float: right;
+        }
+        #two{
+            float: right;
+        }
+        #three{
+            float: right;
+        }
+        #four{
+            float: right;
+            color: rgb(0, 206, 209);
+        }
+        figcaption{
+            padding-top: 10px;
+        }
+        .main{
+            margin: auto;
+            margin-top: 50px;
+            border:none;
+            width:60%;
+            height: 60%;
+            border-radius: 30px;
+            background-image: linear-gradient(to top right, rgb(196, 200, 255), rgb(255, 244, 244), rgb(196, 200, 255));
+        }
+       .phone img{
+            width: 40%; 
+            height:40%;
+            padding: 30px;
+            padding-bottom: 60px;
+            float: left;
+       }
+       .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .login{
+            float:right;
+            padding-right: 15%;   
+        }
+        .login p{
+            text-align: center;
+            font-size: large;
+            color: rgb(90, 90, 90); 
+        }
+        input#email{
+            background-image: url(Icon\ awesome-phone-alt.svg);   
+        }
+        input#admission{
+            background-image: url(Icon\ awesome-slideshare.svg);
+        }
+        input#pwd{
+            background-image: url(Icon\ awesome-eye-slash.svg);
+        }
+        input{
+            background-repeat: no-repeat;
+            background-size:15px;
+            background-position: 10px 10px;
+            text-indent: 22px;
+            border-radius: 25px;
+            padding: 10px 10px;
+            border: none; 
+            width: 110%;  
+        }
+        #five {
+            width: 120%;
+            text-align: right;
+            font-size: medium;  
+        }
+        button{
+            background-color: rgba(250, 102, 102, 0.973);
+            width: 40%;
+            text-align: center;
+            margin: 16px 10px 0;
+            color: white;
+            margin-top: 0;
+            border-radius: 30px;
+            border:none;
+            padding: 6px 6px;
+            margin-bottom: 5%;
+            font-size: medium; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img class="logo" src="http://kaboodleinnovations.com/Website%20-%20Desktop/images/logo.png" alt="logo">
+        <figure id="one">
+             <center><img class="icons"  src="team-leader.svg" style="width: 35px;" /></center>
+             <figcaption>School Leader</figcaption>
+        </figure>
+        <figure id="two">
+            <center><img class="icons"  src="Parent.svg" style="width: 35px;" /></center>
+            <figcaption>Parent</figcaption>
+        </figure>
+        <figure id="three">
+            <center><img class="icons"  src="teacher.svg" style="width: 40px;" /></center>
+            <figcaption>Teacher</figcaption>
+        </figure>
+        <figure id="four">
+            <center><img class="icons"  src="student.svg" style="width: 35px;" /></center>
+            <figcaption>Student</figcaption>
+        </figure>
+    </div>
+    <div class="main clearfix">
+        <div class="phone">
+            <img src="Rectangle 23.svg">
+        </div>
+        <div class="login">
+           <p>Login</p>
+           <form>
+              <label for="email" ></label>
+              <input placeholder="Email or Phone" type="email" id="email" name="email" >
+           </form>
+           <p>-OR-</p>
+           <form>
+              <label for="admission" ></label>
+              <input placeholder="Your admission number" type="admission" id="admission" name="admission"  >
+           </form>
+           <br>
+           <form>
+            <label for="pwd" ></label>
+            <input placeholder="Password"type="password" id="pwd" name="pwd" >
+         </form>
+         <p id="five">Forgot password?</p>
+        <center> <button onclick="login();">Login</button></center>
+        </div>
+    </div>   
+    <script>
+        function login(){
+            window.location.href="Dashboard.html";
+        }
+    </script>
+</body>
+</html>

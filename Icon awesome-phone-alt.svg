@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 23" width="24" height="23">
+	<title>Web 1920 – 4</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.42;fill: #000000 } 
+	</style>
+	<g id="Web 1920 – 4">
+		<g id="Scroll Group 5">
+			<g id="Group 26126">
+				<path id="Icon awesome-phone-alt" class="shp0" d="M23.34 16.25L18.31 14.1C17.87 13.91 17.36 14.03 17.05 14.41L14.83 17.13C11.33 15.48 8.52 12.67 6.87 9.17L9.59 6.94C9.96 6.64 10.09 6.12 9.9 5.68L7.74 0.65C7.53 0.17 7.02 -0.09 6.51 0.03L1.84 1.11C1.35 1.22 1 1.65 1 2.16C1 13.68 10.34 23 21.84 23C22.35 23 22.78 22.65 22.89 22.16L23.97 17.49C24.09 16.98 23.82 16.46 23.34 16.25L23.34 16.25Z" />
+			</g>
+		</g>
+	</g>
+</svg>
